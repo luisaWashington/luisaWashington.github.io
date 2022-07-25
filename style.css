@@ -1,0 +1,83 @@
+@font-face {
+    font-family: amor;
+    src: url("Love.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azulclaro:rgb(79, 79, 246);
+    --azulescuro:rgb(1, 1, 99);
+}
+
+h1 {
+    font-family: amor;
+    font-size: 60px;
+    color: white;
+}
+
+body {
+    background: linear-gradient(90deg,rgb(79, 79, 246),rgb(1, 1, 99));
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.4);
+    width: 25%;
+    padding: 0.625rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.box label, span {
+    color: white;
+}
+
+.box input[type="submit"] {
+    background-color: var(--azulclaro);
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.box input[type="submit"]:hover {
+    background: var(--azulescuro);
+    border: 1px solid white;
+}
+
+.box textarea {
+    resize: none;
+    width: 100%;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.input[type="file"] {
+    color: white;
+}
+
+.box input[type="text"],input[type="email"],input[type="file"],select {
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.box input[type="text"]:focus,input[type="email"]:focus,select:focus,textarea:focus {
+    background: rgb(221, 194, 184);
+}
+
